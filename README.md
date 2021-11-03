@@ -25,3 +25,12 @@ Use this command to run application using default setting (server must be run on
 `java -jar ReportClientApp-1.0-SNAPSHOT-jar-with-dependencies.jar'`<br/>
 If server run on another host and port, use this command <br/>
 `java -jar ReportClientApp-1.0-SNAPSHOT-jar-with-dependencies.jar 'http://HOST:PORT'`
+
+## How to run via Docker
+1. If jar and Dockerfile is in the same directory, use this command to build Docker image <br/>
+`docker build -t IMAGE_NAME .`
+2. If jar and Dockerfile is not in ther same directory, use this command <br/>
+`docker build -t IMAGE_NAME-f /path/to/Dockerfile .`
+4. Run container <br />
+`docker run --name demo-server --rm -d IMAGE_NAME http://SERVER_HOST:SERVER_PORT`
+<br/>
