@@ -8,6 +8,18 @@ Application flow :
 5. If user click Submit Button, app will submit detected public IP to server
 6. Application will show server response in main page.
 
+## How to build JAR file
+### Using Netbeans IDE 11
+1. Import project to IDE
+2. Right click on project folder root
+3. Choose Run Maven -> Goals...
+4. In field Goals, fill with `clean compile assembly:single`
+5. Click OK
+### Using terminal
+1. Open the terminal
+2. go to project root directory
+3. run this comman <br/>
+`mvn clean compile assembly:single`
 ## How to run JAR file
 Use this command to run application using default setting (server must be run on localhost:8080)<br/>
 `java -jar ReportClientApp-1.0-SNAPSHOT-jar-with-dependencies.jar'`<br/>
